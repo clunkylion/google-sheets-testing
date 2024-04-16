@@ -23,7 +23,6 @@ async function accessToGoogleSuite() {
         data: 'John Doe',
       },
     ]);
-    sheet
   } catch (error) {
     console.log(error);
   }
