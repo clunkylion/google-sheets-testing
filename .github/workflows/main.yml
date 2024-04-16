@@ -27,5 +27,5 @@ jobs:
 
       - name: deploy
         run: |
-          zip -j deploy.zip index.js
+          zip -r deploy.zip /.
           aws lambda update-function-code --function-name arn:aws:lambda:us-east-1:697083516305:function:google-sheets-testing --zip-file fileb://deploy.zip
