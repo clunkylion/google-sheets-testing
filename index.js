@@ -28,7 +28,7 @@ async function accessToGoogleSuite() {
   }
 }
 
-export const handler = async (event) => {
+exports.handler = async (event) => {
   await accessToGoogleSuite();
   const response = {
     statusCode: 200,
